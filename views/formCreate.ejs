@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs")%>
+
+<% const year = new Date(); %>
+<% const day = year.getDate(); %>
+<% const month = year.getMonth(); %>
+<% const yr = year.getFullYear(); %>
+<% const hour = year.getHours(); %>
+<% const minute = year.getMinutes(); %>
+<% const second = year.getSeconds(); %>
+<% const currentDate = yr + "-" + month + "-" + day + " : " + hour+ ":" + minute+ ":" + second %>
+
+<section id="FormCreate">
+    <div class="container px-0">
+        <div class="mt-5 p-5 rounded-3 divBackground" style="background-color: #FFDBB5; border-radius: 10px; ">
+          <h2 class="headingTitle">Create...</h2><br>
+            <form action="/submit" method="POST">
+            <h7><span class="headingTitle">ID :</span> <input type="none" name="ID" class="paragraph" style="width:0px; visibility: hidden;" value="<%=randomIdGen%>"> <%=randomIdGen%></output></h7><br>
+            <div class=""><label class="paragraph">Title : </label><input name="titleName" type="textbox" class="formStyle" placeholder="Enter your title" style="height:40px; min-width: 92%; width: auto;"></input></div>
+            <br>
+            <span class="headingTitle">Date :</span> <input name="dateOfCreation" style="width:0px; visibility: hidden;" value="<%= currentDate %>"> <%= currentDate %></input>
+            <br><br>
+            <label class="paragraph pr-2">Author : </label><input name="authorName" type="textbox" class="formStyle" placeholder="Enter your Name" style="height:40px; width: 92%;"></input>
+            <br><br>
+            <label class="paragraph">Blog starts here : </label><textarea name="textContent" warp="hard" cols="40" rows="5" placeholder="Type away..." style="min-height:50vh; width: 100%;"></textarea>
+            <br>
+            <input type="submit" class="btn btn-primary" value="Save and Submit" style="border-radius: 30px; margin-top: 10px;"></input>
+          </form>    
+        </div>
+      </div>
+</section>
+
+<%- include("partials/footer.ejs")%>

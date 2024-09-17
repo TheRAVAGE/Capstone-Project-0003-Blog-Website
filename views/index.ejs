@@ -1,0 +1,52 @@
+<%- include("partials/header.ejs")%>
+<section id="hero" class="px-5">
+    <div class="container px-5" style="background-color: #FFDBB5; border-radius: 10px; text-align: center;">
+        <div class="px-1 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4 profile-img my-5" src="Assets/Logo.jpg" alt="" width="72" height="57">
+            <h1 class="display-5 fw-bold my-5" style="color: #603F26;"><span style="font-size: 30px;">Im</span> </br>Akhil M Mathew</h1>
+            
+            <p class="paragraph mb-4">a.k.a TheRAVAGE</p>
+            <div class="col-lg-6 mx-auto">
+              <p class="paragraph mb-4">Welcome to my diary, a sanctuary for my thoughts and reflections. Here, I’ll capture the essence of each day—whether it's the small joys, fleeting moments, or profound insights. This is where my inner world finds its voice, where I can freely explore and document my journey. Here’s to finding clarity, celebrating the everyday, and embracing whatever comes next.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                
+                  <a href="/form_create"><button type="button" class="btn btn-primary btn-lg my-3 px-4 gap-3" jf-ext-button-ct="primary button">Create a New Entry</button></a>
+              </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+<!--Blog Collection-->
+
+<section id="blogCollection" class="mb-3 " style="background-color: #FFEAC5;">
+    <div class="container py-3 px-3 mr-3" style="background-color: #FFDBB5; border-radius: 10px;">
+        <div class="container">
+        <h1 class="display-5 fw-bold my-3" style="color: #603F26;"><span style="font-size: 30px;">Blog Collection</h1>
+        <div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 g-3">
+          <%if (locals.form) {%>
+            <% for (var ij = 0; ij<form.length; ij++) { %>
+                <!---->
+                  <div class="card mx-2 my-3 px-3 py-3" style="background-color: #FFEAC5; min-width: 45%; justify-content: center;">
+                  <h5 class="card-header card-title"><%= form[ij].name %></h5>
+                  <h5 class="card-header card-title" style="font-size: 15px;"><%= form[ij].author %></h5>
+                  <div class="card-body">
+                  <p class="card-text card-para"><%= form[ij].date; %></p>
+                  <p class="card-text card-para"><%= form[ij].blog.substring(0, 150); %>...</p>
+                  <div class="container"><form action="/form_view" method="get">
+                  <input type="text" name="ID" value="<%= form[ij].id %>" style="visibility: hidden;"><input type="submit" class="btn btn-primary"style="float: right;" value="View">
+                  </form></div>
+                  </div>
+                  </div>
+                <!---->
+            <% } %>
+          <% } else {%>
+            <a href="/form_create"><button type="button" class="btn btn-primary btn-lg my-3 px-4 gap-3" jf-ext-button-ct="primary button">Create a New Entry</button></a>
+          <% } %>
+          </div>
+       </div>
+     </div>
+</section>
+
+<%- include("partials/footer.ejs")%>
+

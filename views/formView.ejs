@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs")%>
+
+<section id="FormView">
+    <div class="container px-0">
+        <div class="mt-5 p-5 text-left rounded-3 divBackground divFlex" style="background-color: #FFDBB5; border-radius: 10px; ">
+
+            <div style="text-align: right;">
+                <form action="/form_edit" method="get"><input style="visibility: hidden;" name="ID" value="<%= fromIdCheck.id %>"><input type="submit" class="btn btn-primary rounded-pill px-3" value="Edit" style="width: 7rem;"></form>
+            </div>
+            <p class="mb-0 paragraph"style="font-size: 15px;">ID : <%= fromIdCheck.id %>    </p>
+            <h2 class="mb-2 headingTitle" style="text-align: left;"><%= fromIdCheck.name %></h2>
+            <h5 class="mb-2 headingTitle" style="text-align: left;">Author's Name : <%= fromIdCheck.author %></h5>
+            <p class="mb-4 paragraph" style="font-size: 15px;">Date of creation : <%= fromIdCheck.date %></p>
+            <p class="lead paragraph" style="text-align: left; white-space: pre-wrap; text-align: justify;"><%= fromIdCheck.blog %></p>
+            <br>
+            <div>
+                    <form action="/form_delete" method="post"><input style="visibility: hidden;" name="ID" value="<%= fromIdCheck.id %>"><input type="submit" class="btn btn-danger rounded-pill px-3 my-2" value="delete"  style="width: 7rem; float:right;"></form>
+            </div>
+          
+        </div>
+      </div>
+</section>
+
+<%- include("partials/footer.ejs")%>
