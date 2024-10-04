@@ -60,7 +60,30 @@ form[1] = new formDetails(
     "\r\n" +
     "In conclusion, minimalism offers a pathway to a more fulfilling life by simplifying both your physical surroundings and your mental space. By reducing clutter, managing time and finances more intentionally, and fostering personal growth, you can create a life that is richer in meaning and satisfaction. Embracing minimalism is not about depriving yourself but rather about making room for what truly enhances your life."
 );
-i = 2;
+
+form[2] = new formDetails(
+  "950537",
+  "Welcome to Day One: The Journey Begins!",
+  "2024-9-5 : 1:47:39",
+  "Akhil M Mathew",
+  "Hello everyone,\r\n" +
+    "\r\n" +
+    "Welcome to an exciting milestone for us—day one of our deployment journey! Whether you’re a seasoned tech enthusiast or just beginning to explore this world, I'm thrilled to have you here as we take the first steps together.\r\n" +
+    "\r\n" +
+    "Deployments often mark the transition from ideas and development to real-world action. It’s the day when our vision and hard work transform into something tangible that you, our audience, can experience firsthand. Whether you're joining us to see what’s next in our journey, learn something new, or simply stay connected, this is a moment worth celebrating!\r\n" +
+    "\r\n" +
+    "We’ll be sharing updates, insights, and a few behind-the-scenes glimpses of our processes—keeping things transparent and engaging. Think of this as your inside scoop into everything from last-minute fixes to post-launch reflections. By the end of this journey, you’ll have witnessed not only our deployment but the learnings, challenges, and growth that come with it.\r\n" +
+    "\r\n" +
+    "On the Sidenote everyone here has the power to perform all the CRUD (Create Read Update and Delete) operations. So with great power comes great responsibilities. So if you see something that's worth not showing others go ahead and delete it 🤣.\r\n" +
+    "\r\n" +
+    "With that said, I would love to hear your thoughts and feelings. So speak your heart but keep it decent and go HAM!!!\r\n" +
+    "\r\n" +
+    "Thank you for being part of our launch. Here’s to the beginning of something great—let’s make it memorable!\r\n" +
+    "\r\n" +
+    "Stay tuned,\r\n" +
+    "Akhil M Mathew"
+);
+i = 3;
 
 // form [i] =new formDetails();
 // ID number Generation
