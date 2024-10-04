@@ -74,7 +74,7 @@ form[2] = new formDetails(
     "\r\n" +
     "We’ll be sharing updates, insights, and a few behind-the-scenes glimpses of our processes—keeping things transparent and engaging. Think of this as your inside scoop into everything from last-minute fixes to post-launch reflections. By the end of this journey, you’ll have witnessed not only our deployment but the learnings, challenges, and growth that come with it.\r\n" +
     "\r\n" +
-    "On the Sidenote everyone here has the power to perform all the CRUD (Create Read Update and Delete) operations. So with great power comes great responsibilities. So if you see something that's worth not showing others go ahead and delete it 🤣.\r\n" +
+    "On the Sidenote everyone here has the power to perform all the CRUD (Create Read Update and Delete) operations. So with great power comes great responsibilities. Hence if you see something that's worth not showing others go ahead and delete it 🤣.\r\n" +
     "\r\n" +
     "With that said, I would love to hear your thoughts and feelings. So speak your heart but keep it decent and go HAM!!!\r\n" +
     "\r\n" +
