@@ -14,10 +14,10 @@ node index.js
 * now you can go to localhost:10000 to run the website
 ---------------------------------------------------------------------
 
-The Website is made using
--HTML
--CSS
--JavaScript
--Node.JS
--Express.JS
--Embedded JavaScript
+The Website is made using<br>
+-HTML<br>
+-CSS<br>
+-JavaScript<br>
+-Node.JS<br>
+-Express.JS<br>
+-Embedded JavaScript<br>
